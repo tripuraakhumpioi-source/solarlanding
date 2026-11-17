@@ -1,6 +1,7 @@
 
 <?php
-// Solar landing page - initial deployment test
+header('X-PHP-Test: Working');
+$phpStatus = 'PHP is executing successfully!';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,6 +12,9 @@
 </head>
 <body>
     <h1>Solar Consultation</h1>
+
+<p><?php echo htmlspecialchars($phpStatus); ?></p>
+
     <p>Explore solar energy options for your home.</p>
     <p>Our new solar landing page is working!</p>
 </body>
